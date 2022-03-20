@@ -46,7 +46,7 @@ func clamp(grid_position: Vector2) -> Vector2:
 	return out
 
 # Given Vector2 coordinates, calculates and returns the corresponding integer index. You can use this function
-# to convert 22D coordinates to a 1D array's indices.
+# to convert 2D coordinates to a 1D array's indicies.
 
 # There are two cases where you need to convert coordinates like so:
 # 1) We'll need it for the AStar alg, which requres a unique index for each point on the 
