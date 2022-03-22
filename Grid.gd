@@ -2,8 +2,11 @@ extends TileMap
 
 enum { EMPTY = -1, ACTOR, OBSTACLE, OBJECT }
 
+# At the start of the game
 func _ready():
+	# Loop over children and update tilemap
 	for child in get_children():
+		# set_cellv(Vector2) modifies a tile in the tileset using a Vector2 position
 		set_cellv(world_to_map(child.position), child.type)
 
 func get_cell_pawn(coordinates):

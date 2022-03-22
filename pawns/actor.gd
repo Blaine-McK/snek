@@ -29,6 +29,7 @@ func update_look_direction(direction):
 	$Sprite.rotation = direction.angle()
 
 func move_to(target_position):
+	# We set process func to false because we use process function to listen to players input
 	set_process(false)
 	
 	# Move the node to the target cell instantly
