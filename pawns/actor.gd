@@ -1,4 +1,4 @@
-extends "res://pawns/pawn.gd"
+extends "pawn.gd"
 
 onready var Grid = get_parent()
 

@@ -29,7 +29,6 @@ func request_move(pawn, direction):
 		ACTOR:
 			var pawn_name = get_cell_pawn(cell_target).name
 			print("Cell %s contains %s" % [cell_target, pawn_name])
-			
 
 func update_pawn_position(pawn, cell_start, cell_target):
 	set_cellv(cell_target, pawn.type)
